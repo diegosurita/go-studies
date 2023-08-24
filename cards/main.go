@@ -10,11 +10,16 @@ func main() {
 	// var card string
 
 	// But the most commont way to initialize a variable is:
-	card := "Ace of Spades"
-	// Go strongly infer the type of the variable as string.
+	card := newCard()
+	// Go strongly infer the type of the variable.
 
-	// We can reassign a variable.
-	card = "Five of Diamonds"
+	// After the variable to be initialized, we can reassign a variable.
+	// card = "Five of Diamonds"
 
 	fmt.Println(card)
+}
+
+// Functions have always to return a type.
+func newCard() string {
+	return "Five of Diamonds"
 }
