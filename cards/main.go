@@ -10,13 +10,23 @@ func main() {
 	// var card string
 
 	// But the most commont way to initialize a variable is:
-	card := newCard()
-	// Go strongly infer the type of the variable.
+	// card := newCard()
+	// Go strongly infer the type of the variable as string, because newCard returns a string.
 
 	// After the variable to be initialized, we can reassign a variable.
 	// card = "Five of Diamonds"
 
-	fmt.Println(card)
+	// We can also create a slice of strings.
+	// Slices are like arrays but with a dynamic size. Arrays have a fixed size.
+	cards := []string{newCard(), "Ace of Diamonds"}
+
+	// We can append a new element to the slice.
+	cards = append(cards, "Six of Spades")
+
+	// We can iterate over the slice.
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
 }
 
 // Functions have always to return a type.
