@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// We can initialize a variable with a value.
 	// var card string = "Ace of Spades"
@@ -18,18 +16,16 @@ func main() {
 
 	// We can also create a slice of strings.
 	// Slices are like arrays but with a dynamic size. Arrays have a fixed size.
-	cards := []string{newCard(), "Ace of Diamonds"}
+	cards := newDeck()
 
 	// We can append a new element to the slice.
-	cards = append(cards, "Six of Spades")
+	// cards = append(cards, "Six of Spades")
 
 	// We can iterate over the slice.
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
-}
+	// for i, card := range cards {
+	// 	fmt.Println(i, card)
+	// }
 
-// Functions have always to return a type.
-func newCard() string {
-	return "Five of Diamonds"
+	// Let's print the cards using the print function created on deck.go.
+	cards.print()
 }
