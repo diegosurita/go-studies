@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// We can initialize a variable with a value.
 	// var card string = "Ace of Spades"
@@ -31,5 +29,5 @@ func main() {
 	// Let's print the cards using the print function created on deck.go.
 	// cards.print()
 
-	fmt.Println(cards.toString())
+	cards.saveToFile("my_cards")
 }
