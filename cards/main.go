@@ -27,5 +27,10 @@ func main() {
 	// }
 
 	// Let's print the cards using the print function created on deck.go.
-	cards.print()
+	// cards.print()
+
+	hand, remainingCards := deal(cards, 5)
+
+	hand.print()
+	remainingCards.print()
 }
