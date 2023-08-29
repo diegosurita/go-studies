@@ -16,7 +16,7 @@ func main() {
 
 	// We can also create a slice of strings.
 	// Slices are like arrays but with a dynamic size. Arrays have a fixed size.
-	// cards := newDeck()
+	cards := newDeck()
 
 	// We can append a new element to the slice.
 	// cards = append(cards, "Six of Spades")
@@ -33,7 +33,10 @@ func main() {
 	// cards.saveToFile("my_cards")
 
 	// Create a new deck of cards from a file.
-	cards := newDeckFromFile("my_cards")
+	// cards := newDeckFromFile("my_cards")
+
+	// Shuffle the cards.
+	cards.shuffle()
 
 	cards.print()
 }
