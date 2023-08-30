@@ -53,9 +53,9 @@ func (d deck) shuffle() {
 	}
 }
 
-func deal(d deck, handSize int) (deck, deck) {
-	return d[:handSize], d[handSize:]
-}
+// func deal(d deck, handSize int) (deck, deck) {
+// 	return d[:handSize], d[handSize:]
+// }
 
 func newDeckFromFile(filename string) deck {
 	bs, err := os.ReadFile(filename)
