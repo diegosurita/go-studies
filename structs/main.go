@@ -1,9 +1,7 @@
 package main
 
-import "fmt"
-
 func main() {
-	diego := person{
+	someone := person{
 		firstName: "Diego",
 		lastName:  "Surita",
 		contact: contact{
@@ -12,5 +10,7 @@ func main() {
 		},
 	}
 
-	fmt.Printf("%+v", diego)
+	someonePointer := &someone
+	someonePointer.updateName("Alex")
+	someone.print()
 }
