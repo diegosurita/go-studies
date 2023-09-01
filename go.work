@@ -4,5 +4,6 @@ use (
 	./cards
 	./directions
 	./hello-world
+	./maps
 	./structs
 )
