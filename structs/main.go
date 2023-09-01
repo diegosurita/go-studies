@@ -10,7 +10,6 @@ func main() {
 		},
 	}
 
-	someonePointer := &someone
-	someonePointer.updateName("Alex")
+	someone.updateName("Alex")
 	someone.print()
 }
