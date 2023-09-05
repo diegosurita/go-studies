@@ -5,6 +5,7 @@ use (
 	./chatbot
 	./directions
 	./hello-world
+	./http
 	./maps
 	./structs
 )
