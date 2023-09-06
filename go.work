@@ -7,5 +7,6 @@ use (
 	./hello-world
 	./http
 	./maps
+	./shape
 	./structs
 )
