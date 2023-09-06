@@ -8,5 +8,6 @@ use (
 	./http
 	./maps
 	./shape
+	./status-checker
 	./structs
 )
